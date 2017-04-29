@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.counter.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/txtCountId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cccccc"
+        android:gravity="end" />
+ 
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rBtnUpId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Count Up" />
+
+        <RadioButton    
+            android:id="@+id/rBtnDownId"       
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Count Down" />
+
+    </RadioGroup>
+ 
+    <Button
+        android:id="@+id/btnCountId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Count" />
+
+</LinearLayout>
